@@ -30,4 +30,9 @@
     <string name="config_gpu_clock_path" translatable="false">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_gpu_busy_path" translatable="false">/sys/kernel/gpu/gpu_busy</string>
     <string name="config_battery_level_path" translatable="false">/sys/class/power_supply/battery/capacity</string>
+
+    <!-- Smart charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 </resources>
