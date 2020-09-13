@@ -6,5 +6,13 @@ allow platform_app sysfs_switch:dir search;
 allow platform_app vendor_default_prop:file { getattr map open read };
 allow platform_app nfc_service:service_manager { find };
 
+# SytemInfo
+allow platform_app sysfs_battery_supply:file { read open getattr };
+allow platform_app sysfs_battery_supply:dir { search } ;
+allow platform_app sysfs_kgsl:file { read open getattr };
+allow platform_app sysfs_kgsl:dir { search };
+allow platform_app sysfs_graphics:file { read open getattr };
+allow platform_app sysfs_graphics:dir { search }; 
+
 get_prop(platform_app, vendor_default_prop)
 get_prop(platform_app, vendor_audio_prop);
